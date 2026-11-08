@@ -40,9 +40,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-
     behaviors {
-
         // Home Row Mods
 
         hm_lctrl: homerow_mods_left {
@@ -323,10 +321,15 @@
             bindings = <&kp BSPC>;
             key-positions = <10 11>;
         };
+
+        z {
+            bindings = <&kp Z>;
+            key-positions = <1 2>;
+            layers = <1>;
+        };
     };
 
     macros {
-
         bm_poc_path: bm_poc_path {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -349,9 +352,9 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp Q         &kp W    &kp E                     &kp R              &kp T                               &kp Y        &kp U              &kp I                      &kp O    &kp P                 &kp BSLH
-&kp BACKSPACE  &kp A         &lt 4 S  &hm_shift_l LEFT_SHIFT D  &lt 3 F            &kp G                               &kp H        &lt 5 J            &hm_shift_r RIGHT_SHIFT K  &lt 4 L  &hm_r RIGHT_ALT SEMI  &kp SQT
-&td_lprn_lcbr  &hm_l LGUI Z  &kp X    &kp C                     &hm_lctrl LCTRL V  &kp B           &kp C_MUTE  &tog 1  &kp N        &hm_rctrl RCTRL M  &kp COMMA                  &kp DOT  &hm_r RGUI SLASH      &td_rprn_rcbr
+&kp GRAVE      &kp Q         &kp W    &kp E                     &kp R              &kp T                              &kp Y        &kp U              &kp I                      &kp O    &kp P                 &kp BSLH
+&kp BACKSPACE  &kp A         &lt 4 S  &hm_shift_l LEFT_SHIFT D  &lt 3 F            &kp G                              &kp H        &lt 5 J            &hm_shift_r RIGHT_SHIFT K  &lt 4 L  &hm_r RIGHT_ALT SEMI  &kp SQT
+&td_lprn_lcbr  &hm_l LGUI Z  &kp X    &kp C                     &hm_lctrl LCTRL V  &kp B          &kp C_MUTE  &tog 1  &kp N        &hm_rctrl RCTRL M  &kp COMMA                  &kp DOT  &hm_r RGUI SLASH      &td_rprn_rcbr
 &kp LALT       &none         &none    &lt_nav 5 BSPC            &lt 4 TAB          &shift_repeat                      &lt 5 SPACE  &lt 4 ENTER        &lt_nav 2 DELETE           &none    &none                 &none
             >;
 
@@ -371,10 +374,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp W         &kp L    &kp Y                     &kp P              &kp B                   &kp Z   &kp F              &kp O                      &kp U      &kp SQT            &kp BACKSLASH
-&kp BACKSPACE  &kp C         &lt 4 R  &hm_shift_l LEFT_SHIFT S  &lt 3 T            &kp G                   &kp M   &lt 5 N            &hm_shift_r RIGHT_SHIFT E  &lt 4 I    &hm_r RIGHT_ALT A  &kp SEMICOLON
-&trans         &hm_l LGUI Q  &kp J    &kp V                     &hm_lctrl LCTRL D  &kp K   &trans  &trans  &kp X   &hm_rctrl RCTRL H  &kp SLASH                  &kp COMMA  &hm_r RGUI DOT     &trans
-&trans         &trans        &trans   &trans                    &trans             &trans                  &trans  &trans             &trans                     &trans     &trans             &trans
+&kp GRAVE      &kp J         &kp G    &kp M                     &kp P              &kp V                  &kp SEMI   &kp LS(DOT)        &kp SLASH                  &kp U    &kp DQT            &kp SINGLE_QUOTE
+&kp BACKSPACE  &kp R         &lt 4 S  &hm_shift_l LEFT_SHIFT N  &lt 3 D            &kp B                  &kp COMMA  &lt 5 A            &hm_shift_r RIGHT_SHIFT E  &lt 4 I  &hm_r RIGHT_ALT H  &kp SEMICOLON
+&trans         &hm_l LGUI X  &kp F    &kp L                     &hm_lctrl LCTRL C  &kp W  &trans  &trans  &kp MINUS  &hm_rctrl RCTRL U  &kp O                      &kp Y    &hm_r RGUI K       &trans
+&trans         &trans        &trans   &trans                    &trans             &kp T                  &trans     &trans             &trans                     &trans   &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -412,10 +415,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &kp N3  &kp N2  &kp N1  &none   &none                      &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK  &kp BSPC
-&trans  &kp N6  &kp N5  &kp N4  &none   &none                      &kp COMMA  &kp N4  &kp N5   &kp N6  &kp SLASH  &none
-&trans  &kp N9  &kp N8  &kp N7  &none   &none      &trans  &trans  &kp MINUS  &kp N1  &kp N2   &kp N3  &kp SLASH  &kp ENTER
-&bm_poc_path   &none   &none   &trans   &trans  &kp ENTER                  &kp TAB    &kp N0  &kp DOT  &none   &none      &none
+&trans        &kp N3  &kp N2  &kp N1  &none   &none                      &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK  &kp BSPC
+&trans        &kp N6  &kp N5  &kp N4  &none   &none                      &kp COMMA  &kp N4  &kp N5   &kp N6  &kp SLASH  &none
+&trans        &kp N9  &kp N8  &kp N7  &none   &none      &trans  &trans  &kp MINUS  &kp N1  &kp N2   &kp N3  &kp SLASH  &kp ENTER
+&bm_poc_path  &none   &none   &trans  &trans  &kp ENTER                  &kp TAB    &kp N0  &kp DOT  &none   &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -435,7 +438,7 @@
 &kp ESC  &kp GRAVE  &kp ASTRK  &kp LT    &kp GT     &kp UNDER                    &kp DOLLAR  &kp LBRC              &kp RBRC               &kp CARET  &none     &none
 &none    &kp EXCL   &kp DQT    &kp FSLH  &kp MINUS  &kp PLUS                     &kp HASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp AMPS  &none
 &none    &kp TILDE  &kp PLUS   &kp LBKT  &kp RBKT   &kp PERCENT  &trans  &trans  &kp AT      &kp FSLH              &kp PIPE               &kp BSLH   &none     &none
-&none    &none      &none      &trans     &trans      &trans                        &trans       &trans                 &trans                  &none      &none     &none
+&none    &none      &none      &trans    &trans     &trans                       &trans      &trans                &trans                 &none      &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
