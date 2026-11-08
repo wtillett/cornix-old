@@ -1,0 +1,442 @@
+layout: {zmk_keyboard: cornix}
+layers:
+  Base:
+  - '`'
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - \
+  - BACKSPACE
+  - A
+  - {t: S, h: Symbol}
+  - {t: D, h: LEFT SHIFT}
+  - {t: F, h: Num}
+  - G
+  - H
+  - {t: J, h: Mouse}
+  - {t: K, h: RIGHT SHIFT}
+  - {t: L, h: Symbol}
+  - {t: ;, h: RIGHT ALT}
+  - ''''
+  - '&td_lprn_lcbr'
+  - {t: Z, h: LGUI}
+  - X
+  - C
+  - {t: V, h: LCTRL}
+  - B
+  - MUTE
+  - {t: Canary, h: toggle}
+  - N
+  - {t: M, h: RCTRL}
+  - ','
+  - .
+  - {t: /, h: RGUI}
+  - '&td_rprn_rcbr'
+  - LALT
+  - ''
+  - ''
+  - {t: BSPC, h: Mouse}
+  - {t: TAB, h: Symbol}
+  - '&shift_repeat'
+  - {t: SPACE, h: Mouse}
+  - {t: ENTER, h: Symbol}
+  - {t: DELETE, h: Nav}
+  - ''
+  - ''
+  - ''
+  Canary:
+  - '`'
+  - J
+  - G
+  - M
+  - P
+  - V
+  - ;
+  - Sft+.
+  - /
+  - U
+  - '"'
+  - ''''
+  - BACKSPACE
+  - R
+  - {t: S, h: Symbol}
+  - {t: N, h: LEFT SHIFT}
+  - {t: D, h: Num}
+  - B
+  - ','
+  - {t: A, h: Mouse}
+  - {t: E, h: RIGHT SHIFT}
+  - {t: I, h: Symbol}
+  - {t: H, h: RIGHT ALT}
+  - ;
+  - {t: ▽, type: trans}
+  - {t: X, h: LGUI}
+  - F
+  - L
+  - {t: C, h: LCTRL}
+  - W
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - {t: U, h: RCTRL}
+  - O
+  - Y
+  - {t: K, h: RGUI}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Nav:
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - HOME
+  - PAGE UP
+  - UP ARROW
+  - PAGE DOWN
+  - ''
+  - PRINTSCREEN
+  - ''
+  - F6
+  - LEFT ALT
+  - LSHIFT
+  - LCTRL
+  - F7
+  - END
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - INSERT
+  - ''
+  - ''
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  Num:
+  - {t: ▽, type: trans}
+  - '3'
+  - '2'
+  - '1'
+  - ''
+  - ''
+  - +
+  - '7'
+  - '8'
+  - '9'
+  - '*'
+  - BSPC
+  - {t: ▽, type: trans}
+  - '6'
+  - '5'
+  - '4'
+  - {type: held}
+  - ''
+  - ','
+  - '4'
+  - '5'
+  - '6'
+  - /
+  - ''
+  - {t: ▽, type: trans}
+  - '9'
+  - '8'
+  - '7'
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - '1'
+  - '2'
+  - '3'
+  - /
+  - ENTER
+  - '&bm_poc_path'
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ENTER
+  - TAB
+  - '0'
+  - .
+  - ''
+  - ''
+  - ''
+  Symbol:
+  - ESC
+  - '`'
+  - '*'
+  - <
+  - '>'
+  - _
+  - $
+  - '{'
+  - '}'
+  - ^
+  - ''
+  - ''
+  - ''
+  - '!'
+  - {t: '"', type: held}
+  - /
+  - '-'
+  - +
+  - '#'
+  - (
+  - )
+  - '='
+  - '&'
+  - ''
+  - ''
+  - '~'
+  - +
+  - '['
+  - ']'
+  - '%'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '@'
+  - /
+  - '|'
+  - \
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  Mouse:
+  - ''
+  - ''
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
+  - ''
+  - ''
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
+  - ''
+  - ''
+  - ''
+  - '&msc SCRL_LEFT'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_RIGHT'
+  - '&msc SCRL_LEFT'
+  - {t: '&mmv MOVE_LEFT', type: held}
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_RIGHT'
+  - Gui+TAB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - '&mkp MB1'
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - ''
+  - ''
+  - ''
+  Game:
+  - '`'
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - TAB
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ''''
+  - ''
+  - ''
+  - ''
+  - LALT
+  - LSHFT
+  - SPACE
+  - SPACE
+  - ENTER
+  - RGUI
+  - ''
+  - ''
+  - ''
+  Debug:
+  - L
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - R
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
+  - '&sys_reset'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&bootloader'
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - '&bootloader'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+  - BT NXT
+  - ''
+  - ''
+  - ''
+  - ''
+  - OUT TOG
+  - ''
+  - ''
+  - ''
+combos:
+- p: [28, 33]
+  k: '&caps_word'
+- p: [29, 32]
+  k: CAPSLOCK
+- p: [0, 1]
+  k: ESC
+- p: [26, 27]
+  k: Ctl+C
+- p: [26, 28]
+  k: Ctl+X
+- p: [27, 28]
+  k: Ctl+V
+- p: [0, 11]
+  k: {t: Game, h: toggle}
+- p: [34, 35]
+  k: ;
+- p: [34, 33]
+  k: '"'
+- p: [1, 2, 3, 4, 7, 8, 9, 10]
+  k: {t: Canary, h: toggle}
+- p: [33, 34, 35]
+  k: {t: Num, h: toggle}
+- p: [40, 39]
+  k: Debug
+- p: [48, 47]
+  k: Debug
+- p: [10, 11]
+  k: BSPC
+- p: [1, 2]
+  k: Z
+  l: [Canary]
